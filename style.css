@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  
+}
+body {
+  background-color: #fff;
+  margin: 0;
+}
+
+header {
+
+  background-image: url(https://cdn.pixabay.com/photo/2017/03/18/19/58/turntable-2154823_1280.jpg);
+  background-position: 0  -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  position: relative;
+  
+}
+button {
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+form {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+}
+form input {
+  border: 0;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+form button {
+  background-color: #f18048;
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  padding: 13px 30px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+header::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+header * {
+  z-index: 1;
+}
+
+header h1{
+    margin:0 0 30px;
+}
+
+ul.songs{
+  list-style-type: none;
+  padding: 0;
+  font-size: 20px;
+  
+}
+.btn{
+  background-color: #f18048;
+  border-radius: 10px;
+  padding: 4px 10px;
+  border: 0;
+  color: #fff;
+  font-size: 16px;
+
+}
+
+.btn:hover{
+  transform: scale(0.98);
+}
+.botton.btn:hover{
+  transform: scale(0.98);
+}
+ul.songs li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.container{
+  margin: 30px auto;
+  max-width: 100%;
+  width: 500px;
+}
+
+.more{
+  display: flex;
+  justify-content: center;
+}
+
+
+.more .btn{
+  margin: 4px;
+  
+
+}
+
